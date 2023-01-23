@@ -1,0 +1,38 @@
+<%-include("header")%>
+<body>
+    <div class="box">
+        
+        <h1 class="heading">WORK</h1>
+    </div>
+   
+  
+
+
+<div class="box">
+<%for(var i=0;i<newToDo.length;i++){%>
+    <div class="item ">
+        
+       
+        <input type="checkbox" name="" id=""  >
+        <p><%=newToDo[i]%></p>
+      
+    </div>
+   
+            
+ 
+<%}%>
+<form class="item" action="/work" method="post">
+    <input type="text" name="newitem" id="" placeholder="add in list" autocomplete="off">
+        <button type="submit" name="button">+</button>
+    
+</div>
+
+
+
+
+
+
+
+
+
+<%-include("footer")%>
